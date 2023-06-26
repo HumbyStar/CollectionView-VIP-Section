@@ -151,22 +151,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5D8BD554-6CFA-4D68-95F1-9B9572FB3A0E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "setViewModel(viewModel:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "44E39985-5A82-42AF-8296-071734533B81"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -174,57 +158,9 @@
             filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B2FFB38C-E1B3-4EA4-A4AC-EBC05D7D8689"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "setupSection()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C4EC8E6F-8FC6-444B-9C6D-FA5E08DA8E71"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "preferredLayoutAttributesFitting(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "11E627A9-66E6-4035-9F28-67F923F9E9AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "setViewModel(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -238,8 +174,8 @@
             filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "BannerHomeCell"
             landmarkType = "21">
          </BreakpointContent>
@@ -254,8 +190,8 @@
             filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "BannerHomeCell"
             landmarkType = "21">
          </BreakpointContent>
@@ -871,101 +807,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0D28598D-CD85-4D50-8F3F-E464F109CEC5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeSection.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "cellForItem(at:collectionView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BACE14DB-3277-49C4-8FB7-DAEE239278A4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "setViewModel(viewModel:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "007A31C8-786A-4349-BE7F-91937E6DE621"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "setViewModel(viewModel:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "007A31C8-786A-4349-BE7F-91937E6DE621 - 355b66a82c2b571"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Component_Collection_View___Compositional.BannerHomeCell.setViewModel(viewModel: Swift.Optional&lt;Component_Collection_View___Compositional.BannerHomeViewModel&gt;) -&gt; ()"
-                  moduleName = "Component Collection View + Compositional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/humbertorodrigues/Desktop/Component%20Collection%20View%20+%20Compositional/Component%20Collection%20View%20+%20Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "252">
-               </Location>
-               <Location
-                  uuid = "007A31C8-786A-4349-BE7F-91937E6DE621 - d68756e59ec002f0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Component_Collection_View___Compositional.BannerHomeCell.setViewModel(viewModel: Swift.Optional&lt;Component_Collection_View___Compositional.BannerHomeViewModel&gt;) -&gt; ()"
-                  moduleName = "Component Collection View + Compositional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/humbertorodrigues/Desktop/Component%20Collection%20View%20+%20Compositional/Component%20Collection%20View%20+%20Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "007A31C8-786A-4349-BE7F-91937E6DE621 - d03e1427a5b518de"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Bool) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Component_Collection_View___Compositional.BannerHomeCell.setViewModel(viewModel: Swift.Optional&lt;Component_Collection_View___Compositional.BannerHomeViewModel&gt;) -&gt; ()"
-                  moduleName = "Component Collection View + Compositional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/humbertorodrigues/Desktop/Component%20Collection%20View%20+%20Compositional/Component%20Collection%20View%20+%20Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2986C3A0-D115-4CCE-BC43-C89828FB51DE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -973,25 +814,9 @@
             filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "didLoadCollectionBannerHomeSection(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8F9D3997-73A1-4698-B868-51E91885911D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "setViewModel(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1024,6 +849,70 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "configure(viewModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "988B9432-4C1F-4A01-B926-1329503D0DA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Component Collection View + Compositional/Home/View.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "didLoadBannerHomeSection(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA1A3440-EC20-442F-B311-03DCE9554E33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeSection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "cellForItem(at:collectionView:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EFF6A86-2444-46C3-9381-F5D0140348E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "createCompositionalLayout()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DFA1ED6-A289-4E2D-AC8E-AC514D78796D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Component Collection View + Compositional/Home/BannerHomeSection/BannerHomeSection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "numberOfItems()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -8,55 +8,50 @@
 import UIKit
 
 class BannerHomeCell: UICollectionViewCell {
-    
-    private var section: BannerHomeCollectionViewSection?
+
     var itens = [BannerItem]()
+
+    lazy var bannerImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 12
+        return imageView
+    }()
+    
     
     private lazy var collectionView: CustomCollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        let collectionWidth = UICollectionViewLayoutAttributes()
-        let width = frame.width
-        layout.itemSize = CGSize(width: width * 0.85, height: 286)
-        layout.scrollDirection = .horizontal
-        let collection = CustomCollectionView.init(frame: .zero, collectionViewLayout: layout)
+        let collection = CustomCollectionView.init(frame: .zero, collectionViewLayout: createCompositionalLayout())
         collection.translatesAutoresizingMaskIntoConstraints = false
         collection.showsHorizontalScrollIndicator = false
         collection.delegate = self
         return collection
     }()
     
-    public func setViewModel(viewModel: BannerHomeViewModel?) {
-        DispatchQueue.main.async {
-            self.collectionView.performBatchUpdates {
-            } completion: { [weak self] _ in
-                let section = BannerHomeCollectionViewSection() //Primeira vez que roda é quando iniciado não tem resposta
-                section.delegate = self //Preciso entregar o delegate antes que ele volte no delegate BannerHCVSection
-                section.configure(viewModel: viewModel)
-                self?.section = section
-                self?.collectionView.sections = [section]
-                
-            }
+    func createCompositionalLayout() -> UICollectionViewLayout {
+        let layout = UICollectionViewCompositionalLayout { (sectionIndex, environment) -> NSCollectionLayoutSection? in
+            // item
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
-            self.setupView()
-            self.collectionView.reloadData()
+            // grupo
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9), heightDimension: .absolute(200)) // Ajuste o valor de heightDimension conforme necessário
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+
+            // seção
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .continuous
+            
+            // espaçamentos e bordas
+            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
+            section.interGroupSpacing = 12
+            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
+
+            return section
         }
+        return layout
     }
-    
-    func setupSection() -> BannerHomeCollectionViewSection {
-        let section = BannerHomeCollectionViewSection()
-        section.delegate = self
-        return section
-    }
-    
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        let attributes = super.preferredLayoutAttributesFitting(layoutAttributes)
-        let collectionWidth = superview?.frame.width ?? 0.0
-        attributes.size.width = collectionWidth
-        attributes.size.height = 286
-        return attributes
-    }
-    
-    
+
     
     func setupView() {
         addSubview(collectionView)
@@ -64,8 +59,17 @@ class BannerHomeCell: UICollectionViewCell {
             collectionView.topAnchor.constraint(equalTo: topAnchor),
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
+            bannerImage.topAnchor.constraint(equalTo: topAnchor),
+            bannerImage.leadingAnchor.constraint(equalTo: leadingAnchor),
+            bannerImage.trailingAnchor.constraint(equalTo: trailingAnchor),
+            bannerImage.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
+    }
+    
+    func configure(item: String) {
+        bannerImage.image = UIImage(named: item)
     }
     
 }

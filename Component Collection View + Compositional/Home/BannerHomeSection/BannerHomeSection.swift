@@ -42,12 +42,19 @@ extension BannerHomeSection {
     }
     
     func numberOfItems() -> Int {
-        return 1
+        return self.viewModel?.numberOfItems() ?? 0
     }
     
     func cellForItem(at indexPath: IndexPath, collectionView: UICollectionView) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(BannerHomeCell.self, for: indexPath)
-        cell.setViewModel(viewModel: viewModel)
+//        cell.setViewModel(viewModel: viewModel)
+        
+        guard let viewModel = viewModel else {
+            return UICollectionViewCell()
+        }
+        
+        cell.configure(item: viewModel.itemFor(index: indexPath.row))
+        
         return cell
     }
 }
