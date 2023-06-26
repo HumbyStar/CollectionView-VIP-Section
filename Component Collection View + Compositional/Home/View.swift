@@ -47,4 +47,6 @@ extension View: BannerHomeSectionDelegate {
     func didLoadBannerHomeSection(_ section: SectionProtocol) {
         collectionView.reloadData()
     }
+    
+    //func didLoadLayoutSection(_ section: UI)
 }
