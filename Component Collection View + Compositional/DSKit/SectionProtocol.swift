@@ -33,6 +33,8 @@ public protocol SectionProtocol {
     func footerSize(collectionView: UICollectionView, section: Int) -> CGSize
     
     func willDisplay(at indexPath: IndexPath, collectionView: UICollectionView, cell: UICollectionViewCell)
+    
+    func layoutSection() -> NSCollectionLayoutSection?
 }
 
 public extension SectionProtocol {

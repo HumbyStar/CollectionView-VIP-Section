@@ -27,8 +27,6 @@
 		0C86A11A2A47983A00F4509E /* BannerHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86A1192A47983A00F4509E /* BannerHomeCell.swift */; };
 		0C86A11D2A47A18E00F4509E /* ViewSectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86A11C2A47A18E00F4509E /* ViewSectionFactory.swift */; };
 		0C86A11F2A47A61F00F4509E /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86A11E2A47A61F00F4509E /* ViewControllerFactory.swift */; };
-		0C86A1222A47B8B700F4509E /* BannerHomeCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86A1212A47B8B700F4509E /* BannerHomeCollectionViewSection.swift */; };
-		0C86A1252A48D37100F4509E /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86A1242A48D37100F4509E /* BannerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +52,6 @@
 		0C86A1192A47983A00F4509E /* BannerHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerHomeCell.swift; sourceTree = "<group>"; };
 		0C86A11C2A47A18E00F4509E /* ViewSectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSectionFactory.swift; sourceTree = "<group>"; };
 		0C86A11E2A47A61F00F4509E /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		0C86A1212A47B8B700F4509E /* BannerHomeCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerHomeCollectionViewSection.swift; sourceTree = "<group>"; };
-		0C86A1242A48D37100F4509E /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +128,6 @@
 		0C86A0FB2A47637900F4509E /* BannerHomeSection */ = {
 			isa = PBXGroup;
 			children = (
-				0C86A1182A47982D00F4509E /* Cell */,
 				0C86A10D2A47715600F4509E /* Mock */,
 				0C86A0FE2A47665200F4509E /* ViewModel */,
 				0C86A1052A47697100F4509E /* Service */,
@@ -191,15 +186,6 @@
 				0C86A1162A4781DE00F4509E /* CustomReusableView.swift */,
 			);
 			path = Utills;
-			sourceTree = "<group>";
-		};
-		0C86A1182A47982D00F4509E /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				0C86A1212A47B8B700F4509E /* BannerHomeCollectionViewSection.swift */,
-				0C86A1242A48D37100F4509E /* BannerCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		0C86A11B2A47A17900F4509E /* Factory */ = {
@@ -282,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C86A1032A47677F00F4509E /* BannerInteractor.swift in Sources */,
-				0C86A1252A48D37100F4509E /* BannerCell.swift in Sources */,
 				0C86A0F62A474C9400F4509E /* Array+SafeIndex.swift in Sources */,
 				0C86A1152A47817900F4509E /* UICollectionView+Register.swift in Sources */,
 				0C86A11F2A47A61F00F4509E /* ViewControllerFactory.swift in Sources */,
@@ -293,7 +278,6 @@
 				0C86A10F2A47716C00F4509E /* BannerData.swift in Sources */,
 				0C86A0D92A4745DB00F4509E /* AppDelegate.swift in Sources */,
 				0C86A1072A4769A500F4509E /* BannerHomePresenter.swift in Sources */,
-				0C86A1222A47B8B700F4509E /* BannerHomeCollectionViewSection.swift in Sources */,
 				0C86A0DB2A4745DB00F4509E /* SceneDelegate.swift in Sources */,
 				0C86A11D2A47A18E00F4509E /* ViewSectionFactory.swift in Sources */,
 				0C86A1092A476E4300F4509E /* BannerService.swift in Sources */,

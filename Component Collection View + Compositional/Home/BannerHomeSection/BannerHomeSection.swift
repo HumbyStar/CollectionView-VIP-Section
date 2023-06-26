@@ -12,7 +12,6 @@ protocol BannerHomeSectionDelegate: AnyObject {
 }
 
 class BannerHomeSection: SectionProtocol {
-    
     private var viewModel: BannerHomeViewModel?
     var interactor: BannerHomeInteractorProtocol
     
@@ -26,6 +25,31 @@ class BannerHomeSection: SectionProtocol {
     func fetch() {
         interactor.loadBannersHome()
     }
+    
+    func createCompositionalLayout() -> UICollectionViewLayout {
+        let layout = UICollectionViewCompositionalLayout { (sectionIndex, environment) -> NSCollectionLayoutSection? in
+            // item
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            
+            // grupo
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)) // Ajuste o valor de heightDimension conforme necessário
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+            
+            // seção
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .continuous
+            
+            // espaçamentos e bordas
+            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
+            section.interGroupSpacing = 12
+            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
+            
+            return section
+        }
+        return layout
+    }
+    
     
 }
 
@@ -47,7 +71,7 @@ extension BannerHomeSection {
     
     func cellForItem(at indexPath: IndexPath, collectionView: UICollectionView) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(BannerHomeCell.self, for: indexPath)
-//        cell.setViewModel(viewModel: viewModel)
+        //        cell.setViewModel(viewModel: viewModel)
         
         guard let viewModel = viewModel else {
             return UICollectionViewCell()
@@ -56,6 +80,27 @@ extension BannerHomeSection {
         cell.configure(item: viewModel.itemFor(index: indexPath.row))
         
         return cell
+    }
+    
+    func layoutSection() -> NSCollectionLayoutSection? {
+        // item
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        // grupo
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9), heightDimension: .absolute(250)) // Ajuste o valor de heightDimension conforme necessário
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        
+        // seção
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        
+        // espaçamentos e bordas
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
+        section.interGroupSpacing = 12
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
+        
+        return section
     }
 }
 

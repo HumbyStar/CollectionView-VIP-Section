@@ -30,6 +30,12 @@ class View: UIView {
     }
     
     public func setSections(_ sections: [SectionProtocol]) { //Ve no código da PTZ como fazer a factory depois
+        if !sections.isEmpty {
+            let layout = UICollectionViewCompositionalLayout { sectionIndex, _ in
+                return self.collectionView.sections[sectionIndex].layoutSection()
+            }
+            collectionView.collectionViewLayout = layout
+        }
         collectionView.sections = sections
     }
     
@@ -47,4 +53,6 @@ extension View: BannerHomeSectionDelegate {
     func didLoadBannerHomeSection(_ section: SectionProtocol) {
         collectionView.reloadData()
     }
+    
+    //func didLoadLayoutSection(_ section: UI)
 }
